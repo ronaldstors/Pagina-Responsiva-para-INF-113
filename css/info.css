@@ -1,0 +1,16 @@
+.info__columna
+{
+  background: rgb(245, 108, 21);
+  color:antiquewhite;
+  padding: 15px;
+  margin-bottom:30px;
+}
+
+.info__columma
+{
+  background: rgba(63, 63, 63, 0.5);
+  color:black;
+  padding: 24px;
+  margin-bottom:80px;
+  width: 100%;
+}

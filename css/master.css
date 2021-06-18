@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url(banner.css);
+@import url(info.css);
+@import url(vid.css);
+@import url(styles.css);
+*
+{
+  box-sizing: border-box;
+}
+
+img
+{
+  display: block;
+  max-width: 100%;
+}
+
+body
+{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: black;
+}
+
+h1, h2
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3, h4, h5, h6
+{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing:1.5px
+}
+.colorss
+{
+  color: rgba(29, 214, 159, 0.856);
+}
+.contenedor
+{ 
+  margin: auto;
+  width: 98%;
+}
+
+/*===========header=========*/
+.header
+{
+  height: 60px;
+}
+
+.header .contenedor
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo, .icon-menu
+{
+  margin:5px;
+  color: antiquewhite;
+}
+
+.icon-menu
+{
+  display:block;
+  width:40px;
+  height:40px;
+  font-size:30px;
+  background: rgb(245, 108, 21);
+  color: antiquewhite;
+  text-align: center;
+  line-height: 45px;
+  border-radius:5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+/*===========estilo del menu===========*/
+
+.nav
+{
+  position: absolute;
+  top:60px;
+  left:-100%;
+  width:100%;
+  transition: all 0.4s;
+}
+
+.menu
+{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.menu__link
+{
+  display:block;
+  padding:18px;
+  background: rgb(245, 108, 21);
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.menu__link:hover
+{
+  background: white;
+  color: rgb(245, 108, 21);
+}
+
+.mostrar
+{
+  left:0;
+}
+
+.select
+{
+  background: white;
+  color: rgb(245, 108, 21);
+}
+
+.banner__img
+{
+  width:100%;
+}
+
+/*=============footer==============*/
+
+.footer
+{
+  background:#333;
+  color: #fff;
+  padding:10px;
+  text-align: center;
+}
+
+.footer [class^="icon-"]
+{
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  background: white;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  line-height:40px;
+}
+.botons
+  {
+    font-style: italic;
+    text-align: center;
+    display: block;
+    width: 200px;
+    color: rgb(90, 90, 89);
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 8px;
+    border: 3px solid rgb(230, 115, 8);
+  }
+
+/*==========resposivo==========*/
+@media(min-width:480px)
+{
+  .logo
+  {
+    font-size: 40px;
+  }
+
+  .bannerS__titulo
+  {
+    font-size: 30px;
+    margin: 7px 0;
+  }
+
+  .bannerS__txt
+  {
+    display: block;
+    font-size: 20px;
+    margin: 8px 0;
+  }
+
+  .info
+  {
+    display:flex;
+    justify-content:space-between;
+    margin-top: -90px;
+  }
+
+  .info__columna
+  {
+    width: 32%;
+  }
+
+  .info__columma
+  {
+    width: 24%;
+  }
+
+  .info__titulo
+  {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+
+  .musica
+  {
+    display:inline-block;
+    justify-content:space-between;
+    margin-top: -10px;
+  }
+
+  .musica__columna
+  {
+    width: 50%;
+  }
+
+  .musica__titulo
+  {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .footer -social [class^="icon-"]
+  {
+    margin:0 15px;    
+  }
+  .botons
+  {
+    font-style: italic;
+    text-align: center;
+    display: block;
+    width: 200px;
+    color: rgb(90, 90, 89);
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 8px;
+    border: 3px solid rgb(230, 115, 8);
+  }
+}
+
+@media (min-width:768px)
+{
+  .bannerS__titulo
+  {
+    font-size: 50px;
+  }
+  .botons
+  {
+    font-style: italic;
+    text-align: center;
+    display: block;
+    width: 200px;
+    color: rgb(90, 90, 89);
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 8px;
+    border: 3px solid rgb(230, 115, 8);
+  }
+  
+}
+
+@media (min-width:1024px)
+{
+  .contenedor
+  {
+    width: 90%;
+  }
+  .nav
+  {
+    position: static;
+  }
+  .menu
+  {
+    display: flex;
+  }
+  .icon-menu
+  {
+    display:none;
+  }
+  .menu__link
+  {
+    background:none;
+    font-size: 20px;
+  }
+  .select
+  {
+    background:none;
+  }
+  .bannerS__titulo
+  {
+    font-size: 60px;
+  }
+  .botons
+  {
+    font-style: italic;
+    text-align: center;
+    display: block;
+    width: 200px;
+    color: rgb(90, 90, 89);
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 8px;
+    border: 3px solid rgb(230, 115, 8);
+  }
+}

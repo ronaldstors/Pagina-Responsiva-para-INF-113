@@ -1,0 +1,27 @@
+.bannerS
+{
+    margin-top:-60px;
+    position: relative;
+    z-index:-1000;
+    margin-bottom: 0px;
+}
+
+.bannerS .contenedor
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%; 
+    color: rgba(29, 214, 159, 0.856);
+    text-align: center;
+}
+
+.bannerS__txt
+{
+    display: none;
+}
+.contenedor h3
+{
+    text-align: center;
+}
